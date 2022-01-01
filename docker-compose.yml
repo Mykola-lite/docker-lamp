@@ -13,7 +13,7 @@ services:
         driver: bridge
           ipam:
             config:
-              - subnet: 172.16.57.0/24
+              - subnet: 172.17.0.1/16
     ports:
       - "8585:80"
   mysql-server:
