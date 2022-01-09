@@ -8,12 +8,6 @@ services:
     volumes:
       - "./html/:/var/www/html/"
       - /var/run/docker.sock:/var/run/docker.sock
-    networks:
-      default:
-        driver: bridge
-          ipam:
-            config:
-              - subnet: 172.17.0.1/16
     ports:
       - "8585:80"
   mysql-server:
